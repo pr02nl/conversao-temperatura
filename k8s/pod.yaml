@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: meupod
+spec:
+  containers:
+  - name: conv-temp
+    image: pr02nl/conversao-temperatura:v1
+    ports:
+      - containerPort: 8080
